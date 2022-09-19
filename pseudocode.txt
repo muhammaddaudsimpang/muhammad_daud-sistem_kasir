@@ -1,0 +1,46 @@
+Procedure Program_Kasir
+
+store "total","jumlah1","jumlah2","jumlah3","jumlah4","jumlah5" as integer
+store status as boolean
+store "tambahkanbarang" as string with enum of "Y","N"
+store "barang" as string with enum of "barang1","barang2","barang3","barang4","barang5"
+store "barang1" with telur
+store "barang2" with sayur
+store "barang3" with daging
+store "barang4" with bumbu
+store "barang5" with minyak
+store "hargabarang1" with 25000
+store "hargabarang2" with 10000
+store "hargabarang3" with 50000
+store "hargabarang4" with 5000
+store "hargabarang5" with 20000
+
+while status true
+If "barang" equal "barang1"
+display "barang1" and "hargabarang1"
+else If "barang" equal "barang2"
+display "barang2" and "hargabarang2"
+else If "barang" equal "barang3"
+display "barang3" and "hargabarang3"
+else If "barang" equal "barang4"
+display "barang4" and "hargabarang4"
+else if "barang" equal "barang5"
+display "barang5" and "hargabarang5"
+else
+display "kode barang salah"
+end if
+
+display "Tambahkan barang?"
+store "tambahkanbarang" with "Y","N"
+if "tambahkanbarang" equal "Y" false
+else if "tambahkanbarang" equal "N" true
+else
+display "salah menginput data"
+end if
+
+status = true
+
+store "total" with "hargabarang1" + "hargabarang2" + "hargabarang3" + "hargabarang4" + "hargabarang5"
+Display "total"
+
+end
