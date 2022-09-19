@@ -1,6 +1,6 @@
 Procedure Program_Kasir
 
-store "total","jumlah1","jumlah2","jumlah3","jumlah4","jumlah5" as integer
+store "total" as integer
 store status as boolean
 store "tambahkanbarang" as string with enum of "Y","N"
 store "barang" as string with enum of "barang1","barang2","barang3","barang4","barang5"
